@@ -19,4 +19,14 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         console.error('Error:', error);
         alert('Ocurrió un error al procesar el inicio de sesión.');
     });
+
+    // Guardar el correo ingresado en sessionStorage
+    const correo = document.getElementById('correo').value;
+    sessionStorage.setItem('loginEmail', correo);
+});
+
+// Guardar el correo si el usuario hace clic en "¿Olvidaste tu contraseña?"
+document.querySelector('.forgot-password-link a').addEventListener('click', function () {
+    const correo = document.getElementById('correo').value;
+    sessionStorage.setItem('loginEmail', correo);
 });

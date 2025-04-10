@@ -21,6 +21,9 @@
             <button type="submit" class="btn-login">Ingresar</button>
         </form>
         <p class="registro-link">¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a></p>
+        <p class="forgot-password-link">
+            <a href="contrasena.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
+        </p>
     </div>
 </body>
 </html>

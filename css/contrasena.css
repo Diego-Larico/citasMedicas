@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +15,9 @@ body {
     padding: 20px;
 }
 
-.login-container {
+.password-reset-container {
     background: #1e1e1e;
-    padding: 2rem 2rem 1.5rem 2rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -26,11 +27,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.login-container:hover {
+.password-reset-container:hover {
     transform: scale(1.02);
 }
 
-.login-container h2 {
+.password-reset-container h2 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
     color: #00aaff;
@@ -67,10 +68,12 @@ input::placeholder {
     font-family: inherit;
 }
 
-.btn-login {
+.btn-recovery,
+.btn-verify,
+.btn-reset {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #680197, #00ffbf,#c046f8);
+    background: linear-gradient(to right, #680197, #00ffbf, #c046f8);
     color: white;
     border: none;
     border-radius: 6px;
@@ -78,51 +81,21 @@ input::placeholder {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
-    transition: .5s;
+    transition: 0.5s;
     background-size: 250%;
 }
 
-.btn-login:hover {
+.btn-recovery:hover,
+.btn-verify:hover,
+.btn-reset:hover {
     background-position: right;
 }
 
-.registro-link {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.registro-link a {
-    color: #00aaff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.registro-link a:hover {
-    color: #00ffbf;
-}
-
-.forgot-password-link {
-    padding-top: 5px;
-}
-
-.forgot-password {
-    color: #00aaff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.forgot-password:hover {
-    color: #00ffbf;
-}
-
 @media (max-width: 480px) {
-    .login-container {
+    .password-reset-container {
         padding: 1.5rem;
     }
-    .login-container h2 {
+    .password-reset-container h2 {
         font-size: 1.5rem;
     }
 }
